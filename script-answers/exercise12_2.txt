@@ -1,0 +1,46 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20230118182103
+Username: LAPTOP-NBUQIKHL\aaron
+RunAs User: LAPTOP-NBUQIKHL\aaron
+Configuration Name: 
+Machine: LAPTOP-NBUQIKHL (Microsoft Windows NT 10.0.19044.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 7112
+PSVersion: 5.1.19041.2364
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2364
+BuildVersion: 10.0.19041.2364
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\aaron\Documents\PowerShell_transcript.LAPTOP-NBUQIKHL.lm3lU__C.20230118182103.txt
+PS C:\Users\aaron\Documents\fullstackopen\part12-containers-applications\script-answers> docker run -it ubuntu bash
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+6e3729cf69e0: Pull complete
+Digest: sha256:27cb6e6ccef575a4698b66f5de06c7ecd61589132d5a91d098f7f3f9285415a9
+Status: Downloaded newer image for ubuntu:latest
+root@9fd2091d9e3b:/# ls
+bin  boot  dev  etc  home  lib  lib32  lib64  libx32  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+root@9fd2091d9e3b:/# cd usr
+root@9fd2091d9e3b:/usr# ls
+bin  games  include  lib  lib32  lib64  libexec  libx32  local  sbin  share  src
+root@9fd2091d9e3b:/usr# cd src
+root@9fd2091d9e3b:/usr/src# ls
+root@9fd2091d9e3b:/usr/src# mkdir app
+root@9fd2091d9e3b:/usr/src# ls
+app
+root@9fd2091d9e3b:/usr/src# cd app
+root@9fd2091d9e3b:/usr/src/app# touch index.js
+root@9fd2091d9e3b:/usr/src/app# ls
+index.js
+root@9fd2091d9e3b:/usr/src/app# exit
+exit
+PS C:\Users\aaron\Documents\fullstackopen\part12-containers-applications\script-answers> stop-transcript
+**********************
+Windows PowerShell transcript end
+End time: 20230118182458
+**********************
